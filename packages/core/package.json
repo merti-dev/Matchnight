@@ -1,0 +1,25 @@
+{
+  "name": "@matchnight/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Framework'ten bağımsız domain mantığı: veri ayrıştırma, Elo, puan durumu",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+    "./node": { "types": "./dist/node.d.ts", "default": "./dist/node.js" }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "backtest": "tsx scripts/backtest.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

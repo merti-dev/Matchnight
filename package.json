@@ -1,0 +1,29 @@
+{
+  "name": "matchnight",
+  "private": true,
+  "description": "Avrupa kupas\u0131 ma\u00e7 merkezi \u2014 Elo tahminleri, puan durumu, ar\u015fiv (EN/DE/TR)",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @matchnight/core && npm run build -w @matchnight/api && npm run build -w @matchnight/web",
+    "test": "npm test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "dev:api": "npm run dev -w @matchnight/api",
+    "dev:web": "npm run dev -w @matchnight/web",
+    "sync": "npm run cli -w @matchnight/api -- sync",
+    "backtest": "npm run backtest -w @matchnight/core"
+  },
+  "engines": {
+    "node": ">=22.17"
+  },
+  "overrides": {
+    "@nestjs/core": "$@nestjs/core",
+    "@nestjs/common": "$@nestjs/common"
+  },
+  "devDependencies": {
+    "@nestjs/core": "12.1.0",
+    "@nestjs/common": "12.1.0"
+  }
+}

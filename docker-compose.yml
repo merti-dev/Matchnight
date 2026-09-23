@@ -1,0 +1,31 @@
+services:
+  api:
+    build: { context: ., dockerfile: apps/api/Dockerfile }
+    image: matchnight-api:latest
+    restart: unless-stopped
+    environment:
+      FOOTBALL_DATA_TOKEN: ${FOOTBALL_DATA_TOKEN:-}
+      SYNC_INTERVAL_MINUTES: ${SYNC_INTERVAL_MINUTES:-30}
+    volumes:
+      # SQLite + arşiv burada; imaj yeniden kurulunca veri kaybolmaz
+      - matchnight-data:/data
+    # Dışarı açılmıyor: yalnızca web konteyneri iç ağdan konuşur
+
+  web:
+    build: { context: ., dockerfile: apps/web/Dockerfile }
+    image: matchnight-web:latest
+    restart: unless-stopped
+    depends_on:
+      api: { condition: service_healthy }
+    environment:
+      MATCHNIGHT_API_URL: http://api:3001/api
+      NEXT_PUBLIC_SITE_URL: ${SITE_URL:-http://localhost:3000}
+      IMPRINT_NAME: ${IMPRINT_NAME:-}
+      IMPRINT_ADDRESS: ${IMPRINT_ADDRESS:-}
+      IMPRINT_EMAIL: ${IMPRINT_EMAIL:-}
+    ports:
+      # Ters vekil (Caddy) arkasındaysan "127.0.0.1:3000:3000" yap
+      - '3000:3000'
+
+volumes:
+  matchnight-data:

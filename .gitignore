@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+next-env.d.ts
+
+# Yerel veritabanı (arşiv .txt dosyaları versiyonlanır, .db versiyonlanmaz)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.db-journal
+
+.env
+.env.local
+.DS_Store

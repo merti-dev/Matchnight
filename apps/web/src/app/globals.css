@@ -1,0 +1,118 @@
+@import 'tailwindcss';
+
+/*
+ * Tema değişkenleri. Grafik renkleri dataviz doğrulayıcısından geçti:
+ * ev/deplasman kategorik 1. ve 2. slot, beraberlik iki kutup arasındaki nötr orta nokta
+ * (bu yüzden bilerek renksiz). Açık ve koyu tema ayrı ayrı seçildi, otomatik ters çevirme değil.
+ */
+:root {
+  color-scheme: light;
+  --bg: #f4f6fa;
+  --surface: #ffffff;
+  --surface-2: #eef1f6;
+  --line: #dde2ea;
+  --ink: #0e1525;
+  --ink-2: #4a5568;
+  --muted: #6b778c;
+  --accent: #3f7d00;
+  --accent-fill: #c6f432;
+  --accent-ink: #0e1525;
+  --series-home: #2a78d6;
+  --series-away: #eb6834;
+  --series-draw: #8a8f9c;
+  --grid: #e1e0d9;
+  --zone-1: #3f7d00;
+  --zone-2: #2a78d6;
+  --good: #0a7a0a;
+  --bad: #c43535;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #0b1020;
+    --surface: #151b2a;
+    --surface-2: #1c2436;
+    --line: #2a3347;
+    --ink: #eef2f8;
+    --ink-2: #b7c0d0;
+    --muted: #8390a6;
+    --accent: #c6f432;
+    --accent-fill: #c6f432;
+    --accent-ink: #0e1525;
+    --series-home: #3987e5;
+    --series-away: #d95926;
+    --series-draw: #6b7080;
+    --grid: #2c2c2a;
+    --zone-1: #c6f432;
+    --zone-2: #3987e5;
+    --good: #3fd06b;
+    --bad: #ff7a70;
+  }
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@utility card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+@utility muted {
+  color: var(--muted);
+}
+
+@utility ink-2 {
+  color: var(--ink-2);
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Dolgu üstündeki etiket rengi: her dolgu için kontrastı yüksek olan (hesaplandı) */
+:root {
+  --on-home: #ffffff;
+  --on-away: #0e1525;
+  --on-draw: #0e1525;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --on-home: #0b1020;
+    --on-away: #0b1020;
+    --on-draw: #ffffff;
+  }
+}
