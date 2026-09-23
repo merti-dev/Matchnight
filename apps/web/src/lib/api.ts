@@ -89,4 +89,6 @@ export class MatchnightApi {
   }
 }
 
-export const api = new MatchnightApi(process.env.MATCHNIGHT_API_URL ?? 'http://localhost:3001/api');
+// localhost yerine 127.0.0.1: WSL gibi ortamlarda "localhost" önce IPv6'ya (::1) gidip
+// zaman aşımına düşebiliyor; IPv4 adresi her yerde aynı davranır.
+export const api = new MatchnightApi(process.env.MATCHNIGHT_API_URL ?? 'http://127.0.0.1:3001/api');
