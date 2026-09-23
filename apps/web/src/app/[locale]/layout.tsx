@@ -30,7 +30,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      {/* Tarayıcı eklentileri (ör. ColorZilla) body'ye özellik ekleyip hydration uyarısı
+          tetikliyor. Yalnız body'nin kendi özelliklerini susturur, içerik yine denetlenir. */}
+      <body suppressHydrationWarning>
         <header className="sticky top-0 z-30 border-b backdrop-blur" style={{ borderColor: 'var(--line)', background: 'color-mix(in srgb, var(--bg) 82%, transparent)' }}>
           <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-5 gap-y-1 px-4 py-3">
             <Link href={routes.home(locale)} className="flex items-baseline gap-2">
