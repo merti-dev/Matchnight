@@ -64,6 +64,8 @@ const ALIASES: Record<string, string> = {
   'fk shakhtar donetsk': 'shakhtar',
   'as monaco': 'monaco',
   'as monaco fc': 'monaco',
+  'aek athen': 'aek-athen',
+  'pae aek': 'aek-athen',
 };
 
 /** Ekranda gösterilecek kısa ad. Tabloda olmayanlar için soneki atılmış kaynak adı. */
@@ -97,6 +99,10 @@ const DISPLAY: Record<string, string> = {
   shakhtar: 'Shakhtar Donetsk',
   monaco: 'AS Monaco',
   'sport-lisboa-e-benfica': 'Benfica',
+  'aek-athen': 'AEK Athen',
+  'real-betis-balompie': 'Real Betis',
+  'como-1907': 'Como',
+  'lask-linz': 'LASK',
 };
 
 /** Karşılaştırma anahtarı: küçük harf, aksansız, tek boşluk. */

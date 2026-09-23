@@ -15,7 +15,7 @@ export function StandingsTable({ rows, t, locale, legend }: { rows: StandingRowD
       <table className="w-full text-sm tabular">
         <thead className="muted text-xs">
           <tr>
-            <th className="w-8 py-2 pl-3 text-left font-medium">{t.table.pos}</th>
+            <th className="w-10 py-2 pl-3 pr-2 text-left font-medium">{t.table.pos}</th>
             <th className="py-2 text-left font-medium">{t.table.team}</th>
             {(['p', 'w', 'd', 'l'] as const).map((k) => (
               <th key={k} className="hidden w-9 py-2 text-right font-medium sm:table-cell">
@@ -29,7 +29,7 @@ export function StandingsTable({ rows, t, locale, legend }: { rows: StandingRowD
         <tbody>
           {rows.map((r) => (
             <tr key={r.team.id} className="border-t" style={{ borderColor: 'var(--line)' }}>
-              <td className="py-1.5 pl-3" style={{ boxShadow: ZONE_COLOR[r.zone] ? `inset 3px 0 0 ${ZONE_COLOR[r.zone]}` : undefined }}>
+              <td className="py-1.5 pl-3 pr-2" style={{ boxShadow: ZONE_COLOR[r.zone] ? `inset 3px 0 0 ${ZONE_COLOR[r.zone]}` : undefined }}>
                 {r.position}
               </td>
               <td className="py-1.5">

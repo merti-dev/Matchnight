@@ -1,0 +1,211 @@
+{
+  "note": "football-data.org v4 /competitions/CL/matches?season=2026 yanitindan kesit (23.09.2026). odds/referees/area/competition alanlari cikarildi.",
+  "teamNames": [
+    "AS Roma",
+    "Arsenal FC",
+    "Aston Villa FC",
+    "Borussia Dortmund",
+    "Club Atlético de Madrid",
+    "Club Brugge KV",
+    "Como 1907",
+    "FC Barcelona",
+    "FC Bayern München",
+    "FC Internazionale Milano",
+    "FC Porto",
+    "FK Bodø/Glimt",
+    "FK Shakhtar Donetsk",
+    "Fenerbahçe SK",
+    "Feyenoord Rotterdam",
+    "Galatasaray SK",
+    "LASK Linz",
+    "Lille OSC",
+    "Liverpool FC",
+    "Manchester City FC",
+    "Manchester United FC",
+    "PAE AEK",
+    "PSV",
+    "Paris Saint-Germain FC",
+    "RB Leipzig",
+    "Racing Club de Lens",
+    "Real Betis Balompié",
+    "Real Madrid CF",
+    "SK Slavia Praha",
+    "SSC Napoli",
+    "Sabah FK",
+    "Sporting Clube de Portugal",
+    "VfB Stuttgart",
+    "Viking FK",
+    "Villarreal CF",
+    "ŠK Slovan Bratislava"
+  ],
+  "matches": [
+    {
+      "season": {
+        "id": 2557,
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-27",
+        "currentMatchday": 2,
+        "winner": null
+      },
+      "id": 575323,
+      "utcDate": "2026-09-08T16:45:00Z",
+      "status": "FINISHED",
+      "matchday": 1,
+      "stage": "LEAGUE_STAGE",
+      "group": null,
+      "lastUpdated": "2026-09-23T00:20:31Z",
+      "homeTeam": {
+        "id": 851,
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "tla": "BRU",
+        "crest": "https://crests.football-data.org/851.png"
+      },
+      "awayTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "score": {
+        "winner": "AWAY_TEAM",
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        },
+        "halfTime": {
+          "home": 1,
+          "away": 3
+        }
+      }
+    },
+    {
+      "season": {
+        "id": 2557,
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-27",
+        "currentMatchday": 2,
+        "winner": null
+      },
+      "id": 575324,
+      "utcDate": "2026-09-08T16:45:00Z",
+      "status": "FINISHED",
+      "matchday": 1,
+      "stage": "LEAGUE_STAGE",
+      "group": null,
+      "lastUpdated": "2026-09-23T00:20:31Z",
+      "homeTeam": {
+        "id": 1899,
+        "name": "PAE AEK",
+        "shortName": "PAE AEK",
+        "tla": "AEK",
+        "crest": "https://crests.football-data.org/1899.png"
+      },
+      "awayTeam": {
+        "id": 2016,
+        "name": "LASK Linz",
+        "shortName": "LASK",
+        "tla": "LIN",
+        "crest": "https://crests.football-data.org/2016.png"
+      },
+      "score": {
+        "winner": "HOME_TEAM",
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        },
+        "halfTime": {
+          "home": 1,
+          "away": 0
+        }
+      }
+    },
+    {
+      "season": {
+        "id": 2557,
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-27",
+        "currentMatchday": 2,
+        "winner": null
+      },
+      "id": 575325,
+      "utcDate": "2026-09-08T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 1,
+      "stage": "LEAGUE_STAGE",
+      "group": null,
+      "lastUpdated": "2026-09-23T00:20:31Z",
+      "homeTeam": {
+        "id": 86,
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "tla": "RMA",
+        "crest": "https://crests.football-data.org/86.png"
+      },
+      "awayTeam": {
+        "id": 108,
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "tla": "INT",
+        "crest": "https://crests.football-data.org/108.png"
+      },
+      "score": {
+        "winner": "HOME_TEAM",
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        },
+        "halfTime": {
+          "home": 2,
+          "away": 0
+        }
+      }
+    },
+    {
+      "season": {
+        "id": 2557,
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-27",
+        "currentMatchday": 2,
+        "winner": null
+      },
+      "id": 575341,
+      "utcDate": "2026-10-13T16:45:00Z",
+      "status": "TIMED",
+      "matchday": 2,
+      "stage": "LEAGUE_STAGE",
+      "group": null,
+      "lastUpdated": "2026-09-23T00:20:31Z",
+      "homeTeam": {
+        "id": 546,
+        "name": "Racing Club de Lens",
+        "shortName": "RC Lens",
+        "tla": "RCL",
+        "crest": "https://crests.football-data.org/546.png"
+      },
+      "awayTeam": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    }
+  ]
+}

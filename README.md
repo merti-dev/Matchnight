@@ -54,10 +54,16 @@ FOOTBALL_DATA_TOKEN=anahtarın
 curl -H "X-Auth-Token: $FOOTBALL_DATA_TOKEN" "https://api.football-data.org/v4/competitions/CL/matches?season=2026" | head -c 400
 ```
 
-> ⚠️ football-data adaptörü (`packages/core/src/football-data.ts`) API'nin dokümante edilen
-> v4 yapısına göre yazıldı ve elle kurulmuş örnek yanıtlarla test edildi; gerçek bir anahtarla
-> henüz çalıştırılmadı. İlk senkronda log'lara bak (`atlandı`, `arşivde olmayan kulüpler`
-> uyarıları). Kulüp adı eşleşmezse `packages/core/src/teams.ts`'teki alias tablosuna ekle.
+> football-data adaptörü 23.09.2026'da gerçek yanıtla doğrulandı: 2026-27 lig aşamasının 144 maçı
+> atlanmadan işleniyor, 36 kulübün arşivdekilerle eşleşmesi testte
+> (`packages/core/tests/fixtures/football-data/`). **Ön eleme turları football-data'nın ücretsiz
+> verisinde yok**, bu yüzden sitede de yok. Kulüp ülkeleri ayrı bir istekle
+> (`/competitions/CL/teams`) geliyor; o yanıt henüz gerçek veriyle denenmedi. Yeni bir kulüp adı
+> eşleşmezse log'da `arşivde olmayan kulüpler` uyarısı çıkar; `packages/core/src/teams.ts`'teki
+> alias tablosuna ekle.
+>
+> Ücretsiz katman: dakikada 10 istek (senkron 30 dakikada bir 2 istek atıyor), kaynak gösterimi
+> gerekli (sitenin alt bilgisinde var). Reklam eklemeden önce football-data.org kullanım şartlarını oku.
 
 ### Komutlar
 
