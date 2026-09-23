@@ -54,8 +54,8 @@ const de: Dictionary = {
   match: {
     eloBefore: 'Elo vorher',
     eloChange: 'Veränderung',
-    h2h: 'Direkter Vergleich in der Champions League',
-    noH2h: 'Erstes Duell in der Champions League.',
+    h2h: 'Direkter Vergleich in der Champions League seit 2011/12',
+    noH2h: 'Kein Duell seit 2011/12, dem Beginn unseres Archivs. Frühere Spiele sind nicht enthalten.',
     form: (team) => `${team}: letzte Champions-League-Spiele`,
     record: (w, d, l) => `${w} S · ${d} U · ${l} N`,
   },

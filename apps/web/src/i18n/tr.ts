@@ -54,8 +54,8 @@ const tr: Dictionary = {
   match: {
     eloBefore: 'Maç öncesi Elo',
     eloChange: 'Değişim',
-    h2h: 'Şampiyonlar Ligi’nde aralarındaki maçlar',
-    noH2h: 'Şampiyonlar Ligi’nde ilk karşılaşma.',
+    h2h: '2011/12’den bu yana Şampiyonlar Ligi’nde aralarındaki maçlar',
+    noH2h: 'Arşivimizin başladığı 2011/12’den bu yana karşılaşmamışlar. Daha önceki maçlar arşivde yok.',
     form: (team) => `${team}: Şampiyonlar Ligi’ndeki son maçları`,
     record: (w, d, l) => `${w}G ${d}B ${l}M`,
   },

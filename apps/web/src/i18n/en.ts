@@ -53,8 +53,8 @@ const en = {
   match: {
     eloBefore: 'Elo before',
     eloChange: 'Change',
-    h2h: 'Head to head in the Champions League',
-    noH2h: 'First meeting in the Champions League.',
+    h2h: 'Head to head in the Champions League since 2011/12',
+    noH2h: 'No meeting since 2011/12, where our archive begins. Earlier games are not included.',
     form: (team: string) => `${team}: last Champions League matches`,
     record: (w: number, d: number, l: number) => `${w}W ${d}D ${l}L`,
   },
